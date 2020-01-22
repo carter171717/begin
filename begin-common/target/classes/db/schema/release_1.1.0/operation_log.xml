@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+	<changeSet id="20200121001" author="wangly">
+		<createTable tableName="API_OPERATION_LOG" remarks="操作日志表">
+			<column name="ID" type="VARCHAR(50)" remarks="日志ID">
+				<constraints nullable="false" primaryKey="true" />
+			</column>
+			<column name="OPER_TRACE" type="VARCHAR(60)" remarks="日志跟踪">
+				<constraints nullable="true" />
+			</column>
+			<column name="USER_NAME" type="VARCHAR(60)" remarks="登录用户名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="LOG_TYPE" type="VARCHAR(8)" remarks="日志类型:REQ-请求,RESP-应答">
+				<constraints nullable="true" />
+			</column>
+			<column name="APP_ID" type="VARCHAR(50)" remarks="应用ID">
+				<constraints nullable="true" />
+			</column>
+			<column name="APP_NAME" type="VARCHAR(128)" remarks="应用名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="HOSPITAL_ID" type="VARCHAR(50)" remarks="医院ID">
+				<constraints nullable="true" />
+			</column>
+			<column name="HOSPITAL_NAME" type="VARCHAR(40)" remarks="医院名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="MODULE_CODE" type="VARCHAR(64)" remarks="模块代码">
+				<constraints nullable="true" />
+			</column>
+			<column name="MODULE_NAME" type="VARCHAR(64)" remarks="模块名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="FUNC_ID" type="VARCHAR(50)" remarks="接口ID">
+				<constraints nullable="true" />
+			</column>
+			<column name="FUNC_NAME" type="VARCHAR(128)" remarks="接口名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="ENCRYPT_TYPE" type="VARCHAR(10)" remarks="加密类型:DES,AES,PLAIN">
+				<constraints nullable="true" />
+			</column>
+			<column name="SIGN_TYPE" type="VARCHAR(10)" remarks="签名类型">
+				<constraints nullable="true" />
+			</column>
+			<column name="VERSION" type="VARCHAR(12)" remarks="版本">
+				<constraints nullable="true" />
+			</column>
+			<column name="COST_TIME" type="VARCHAR(20)" remarks="耗时">
+				<constraints nullable="true" />
+			</column>
+			<column name="REQ_DATE" type="VARCHAR(40)" remarks="请求日期">
+				<constraints nullable="true" />
+			</column>
+			<column name="REQ_TIME" type="VARCHAR(32)" remarks="请求时间">
+				<constraints nullable="true" />
+			</column>
+			<column name="REQ_SIGN" type="VARCHAR(32)" remarks="请求签名">
+				<constraints nullable="true" />
+			</column>
+			<column name="REQ_PARAM" type="CLOB" remarks="请求参数">
+				<constraints nullable="true" />
+			</column>
+			<column name="RESP_TIME" type="VARCHAR(20)" remarks="应答时间">
+				<constraints nullable="true" />
+			</column>
+			<column name="RESP_PARAM" type="CLOB" remarks="应答参数">
+				<constraints nullable="true" />
+			</column>
+			<column name="RESP_CODE" type="VARCHAR(10)" remarks="应答代码">
+				<constraints nullable="true" />
+			</column>
+			<column name="RESP_MSG" type="VARCHAR(1000)" remarks="应答消息">
+				<constraints nullable="true" />
+			</column>
+			<column name="RESULT_CODE" type="VARCHAR(10)" remarks="结果代码">
+				<constraints nullable="true" />
+			</column>
+			<column name="RESULT_MSG" type="VARCHAR(1000)" remarks="结果消息">
+				<constraints nullable="true" />
+			</column>
+		</createTable>
+	</changeSet>
+</databaseChangeLog>

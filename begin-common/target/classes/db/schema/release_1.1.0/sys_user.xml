@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="20200116001" author="wangly">
+        <createTable tableName="SYS_USER" remarks="系统用户表">
+            <column name="ID" type="VARCHAR(50)" remarks="主键">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="USER_NAME" type="VARCHAR(50)" remarks="用户名">
+                <constraints nullable="false" />
+            </column>
+            <column name="PASSWORD" type="VARCHAR(50)" remarks="密码">
+                <constraints nullable="false" />
+            </column>
+            <column name="PHONE" type="VARCHAR(50)" remarks="联系方式">
+                <constraints nullable="true" />
+            </column>
+            <column name="USER_STATE" type="number(2)" remarks="用户状态,1-启用,-1禁用">
+                <constraints nullable="true" />
+            </column>
+            <column name="CREATE_TIME" type="VARCHAR(30)" remarks="创建时间">
+                <constraints nullable="true" />
+            </column>
+            <column name="USER_DESC" type="VARCHAR(300)" remarks="描述">
+                <constraints nullable="true" />
+            </column>
+            <column name="USER_IMG" type="VARCHAR(300)" remarks="头像" defaultValue="http://news.mydrivers.com/Img/20110518/04481549.png">
+                <constraints nullable="true" />
+            </column>
+            <column name="DEPT_ID" type="VARCHAR(50)" remarks="部门主键">
+                <constraints nullable="true" />
+            </column>
+            <column name="STAFF_TYPE" type="VARCHAR(50)" remarks="用户类型">
+                <constraints nullable="true" />
+            </column>
+            <column name="STAFF_NO" type="VARCHAR(32)" remarks="员工工号">
+                <constraints nullable="true" />
+            </column>
+            <column name="HOSPITAL_ID" type="VARCHAR(32)" remarks="医院ID">
+                <constraints nullable="true" />
+            </column>
+            <column name="HOSPITAL_NAME" type="VARCHAR(30)" remarks="医院名称">
+                <constraints nullable="true" />
+            </column>
+            <column name="DEPT_NAME" type="VARCHAR(30)" remarks="科室名称">
+                <constraints nullable="true" />
+            </column>
+            <column name="SALT" type="VARCHAR(100)" remarks="密码加密">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20200117001" author="wangly">
+        <addColumn tableName="SYS_USER">
+            <column name="LAST_LOGIN_TIME" type="timestamp"  remarks="上次登录时间">
+                <constraints nullable="true" />
+            </column>
+            <column name="ERROR_TIMES" type="number(2)"  remarks="错误次数">
+                <constraints nullable="true" />
+            </column>
+            <column name="FREEZE_TIME" type="timestamp"  remarks="冻结时间">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="classpath:db/schema/release_1.1.0/sys_user.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/sys_role.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/sys_menu.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/sys_user_role.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/sys_role_menu.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/sequences.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/service_provider.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/application.xml" relativeToChangelogFile="false" />
+    <include file="classpath:db/schema/release_1.1.0/operation_log.xml" relativeToChangelogFile="false" />
+</databaseChangeLog>

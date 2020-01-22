@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aling.common.mapper.MenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aling.common.entity.Menu">
+        <id column="ID" property="id" />
+        <result column="MENU_NAME" property="menuName" />
+        <result column="MENU_TYPE" property="menuType" />
+        <result column="PID" property="pid" />
+        <result column="MENU_URL" property="menuUrl" />
+        <result column="ICON_URL" property="iconUrl" />
+        <result column="SERVICE_ID" property="serviceId" />
+        <result column="SORT" property="sort" />
+        <result column="STATUS" property="status" />
+        <result column="DESCRIPTION" property="description" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, MENU_NAME,MENU_TYPE, PID, MENU_URL, ICON_URL, SERVICE_ID, SORT, STATUS, DESCRIPTION
+    </sql>
+
+</mapper>

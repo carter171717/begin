@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+	<changeSet id="20200120001" author="wangly">
+		<createTable tableName="API_SERVICE_PROVIDER" remarks="应用表">
+			<column name="SERVICE_ID" type="VARCHAR(100)" remarks="服务ID">
+				<constraints nullable="false" primaryKey="true" />
+			</column>
+			<column name="SERVICE_DESC" type="VARCHAR(100)" remarks="服务描述">
+				<constraints nullable="true" />
+			</column>
+			<column name="BEAN_NAME" type="VARCHAR(120)" remarks="处理bean名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="METHOD" type="VARCHAR(60)" remarks="处理方法名">
+				<constraints nullable="true" />
+			</column>
+			<column name="PAGE_URL" type="VARCHAR(120)" remarks="处理页面">
+				<constraints nullable="true" />
+			</column>
+			<column name="LOG_FLAG" type="CHAR(1)" defaultValue="N" remarks="记录日志标识Y=记录 N=不记录">
+				<constraints nullable="true" />
+			</column>
+			<column name="IS_CHECK_SESSIONID" type="CHAR(1)" defaultValue="N" remarks="Y=CHECK N=NO">
+				<constraints nullable="true" />
+			</column>
+			<column name="IS_CHECK_TOKEN" type="CHAR(1)"  defaultValue="N" remarks="Y=CHECK N=NO">
+				<constraints nullable="true" />
+			</column>
+		</createTable>
+	</changeSet>
+	
+
+
+</databaseChangeLog>

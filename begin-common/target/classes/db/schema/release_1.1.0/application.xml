@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+	<changeSet id="20200120001" author="wangly">
+		<createTable tableName="API_APPLICATION" remarks="应用表">
+			<column name="APP_ID" type="VARCHAR(50)" remarks="应用编号">
+				<constraints nullable="false" primaryKey="true" />
+			</column>
+			<column name="APP_SECRET" type="VARCHAR(50)" remarks="应用密钥">
+				<constraints nullable="true" />
+			</column>
+			<column name="APP_NAME" type="VARCHAR(50)" remarks="应用名称">
+				<constraints nullable="true" />
+			</column>
+			<column name="STATUS" type="VARCHAR(2)" remarks="应用状态:01-正常,00-暂停">
+				<constraints nullable="true" />
+			</column>
+			<column name="APP_TYPE" type="VARCHAR(50)" remarks="应用类型">
+				<constraints nullable="true" />
+			</column>
+			<column name="ENC_TYPE" type="VARCHAR(10)" remarks="加密类型:AES,DES等">
+				<constraints nullable="true" />
+			</column>
+			<column name="SIGN_TYPE" type="VARCHAR(10)" remarks="前面类型:MD5,Plain等">
+				<constraints nullable="true" />
+			</column>
+		</createTable>
+	</changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: begin-service
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos:8848
+      discovery:
+        server-addr: nacos:8848
+
+logging:
+  config: classpath:logback-spring.xml
+  path: D:/logs/begin-service

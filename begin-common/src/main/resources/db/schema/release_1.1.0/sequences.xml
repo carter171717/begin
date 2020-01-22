@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+	<changeSet id="20200116001" author="wangly">
+		<createSequence sequenceName="SEQ_SYS_USER" startValue="1000" />
+		<createSequence sequenceName="SEQ_SYS_ROLE" startValue="1000" />
+		<createSequence sequenceName="SEQ_SYS_MENU" startValue="1000" />
+		<createSequence sequenceName="SEQ_SYS_USER_ROLE" startValue="1000" />
+		<createSequence sequenceName="SEQ_SYS_ROLE_MENU" startValue="1000" />
+	</changeSet>
+
+	<changeSet id="20200120001" author="wangly">
+		<createSequence sequenceName="SEQ_APPLICATION" startValue="1000" />
+		<createSequence sequenceName="SEQ_SERVICE_PROVIDER" startValue="1000" />
+	</changeSet>
+
+	<changeSet id="20200121001" author="wangly">
+		<createSequence sequenceName="SEQ_OPERATION_LOG" startValue="1000" />
+	</changeSet>
+
+</databaseChangeLog>

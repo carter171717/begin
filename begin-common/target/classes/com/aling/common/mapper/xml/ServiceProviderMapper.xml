@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aling.common.mapper.ServiceProviderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aling.common.entity.ServiceProvider">
+        <id column="SERVICE_ID" property="serviceId" />
+        <result column="SERVICE_DESC" property="serviceDesc" />
+        <result column="BEAN_NAME" property="beanName" />
+        <result column="METHOD" property="method" />
+        <result column="PAGE_URL" property="pageUrl" />
+        <result column="LOG_FLAG" property="logFlag" />
+        <result column="IS_CHECK_SESSIONID" property="isCheckSessionid" />
+        <result column="IS_CHECK_TOKEN" property="isCheckToken" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERVICE_ID, SERVICE_DESC, BEAN_NAME, METHOD, PAGE_URL, LOG_FLAG, IS_CHECK_SESSIONID, IS_CHECK_TOKEN
+    </sql>
+
+</mapper>

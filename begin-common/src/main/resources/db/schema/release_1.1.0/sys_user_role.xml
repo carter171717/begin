@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="20200116001" author="wangly">
+        <createTable tableName="SYS_USER_ROLE" remarks="用户角色关联表">
+            <column name="ID" type="VARCHAR(50)" remarks="主键">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="USER_ID" type="VARCHAR(50)" remarks="用户主键">
+                <constraints nullable="true" />
+            </column>
+            <column name="ROLE_ID" type="VARCHAR(50)" remarks="角色主键">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

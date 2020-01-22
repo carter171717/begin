@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "begin",
+      "type": "com.aling.common.config.properties.BeginProperties",
+      "sourceType": "com.aling.common.config.properties.BeginProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "begin.enable-limit-single-term-type-login",
+      "type": "java.lang.Boolean",
+      "description": "是否只能1个设备登录",
+      "sourceType": "com.aling.common.config.properties.BeginProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "begin.need-check-login-random-code",
+      "type": "java.lang.Boolean",
+      "description": "后台登录需要检查验证码是否正确",
+      "sourceType": "com.aling.common.config.properties.BeginProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "begin.test-name",
+      "type": "java.lang.String",
+      "sourceType": "com.aling.common.config.properties.BeginProperties",
+      "defaultValue": "詹姆斯"
+    }
+  ],
+  "hints": []
+}

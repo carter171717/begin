@@ -1,0 +1,16 @@
+server:
+  port: 9999
+  
+  servlet:
+    context-path: /begin-web
+    
+spring:
+  application:
+    name: begin-web
+
+  cloud:
+    service-registry:
+      auto-registration:
+        enabled: true #关闭自动注册
+
+
