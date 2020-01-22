@@ -75,7 +75,7 @@
 
         <jwt.version>0.7.0</jwt.version>
         <flowable.version>6.2.0</flowable.version>
-        <hutool.version>4.0.0</hutool.version>
+        <hutool.version>5.1.1</hutool.version>
         <shiro.version>1.4.0</shiro.version>
         <fastjson.version>1.2.60</fastjson.version>
         <kaptcha.version>2.3.2</kaptcha.version>
