@@ -97,7 +97,7 @@
         <!-- excel模版导入导出 -->
         <easypoi.version>4.0.0</easypoi.version>
 
-        <dom4j.version>2.1.1</dom4j.version>
+        <dom4j.version>2.1.3</dom4j.version>
 
         <!-- normandy-admin 开始 -->
         <kaptcha-version>0.0.9</kaptcha-version>
