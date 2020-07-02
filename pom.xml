@@ -64,7 +64,7 @@
         <jetcache.version>2.5.12</jetcache.version>
 
         <!-- 数据驱动 -->
-        <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <oracle.jdbc14.version>10.2.0.4.0</oracle.jdbc14.version>
 
         <!-- 数据库连接池 -->
