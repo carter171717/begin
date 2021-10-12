@@ -111,7 +111,7 @@
         <io.zipkin.java.version>2.10.1</io.zipkin.java.version>
 
         <!-- 任务中心 -->
-        <xxl-job.version>2.0.2</xxl-job.version>
+        <xxl-job.version>2.3.0</xxl-job.version>
 
         <!-- 蚂蚁金服 开放平台sdk -->
         <alipay.sdk.version>3.1.0</alipay.sdk.version>
