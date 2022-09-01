@@ -101,7 +101,7 @@
 
         <!-- normandy-admin 开始 -->
         <kaptcha-version>0.0.9</kaptcha-version>
-        <jsoup.version>1.11.3</jsoup.version>
+        <jsoup.version>1.15.3</jsoup.version>
         <bitwalker.version>1.19</bitwalker.version>
         <freemarker.version>2.3.28</freemarker.version>
         <shiro-freemarker-tags.version>1.0.0</shiro-freemarker-tags.version>
